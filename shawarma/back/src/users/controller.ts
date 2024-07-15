@@ -28,9 +28,3 @@ export function getUsersController(req: Request, res: Response) {
     .contentType('application/json')
     .json(response)
 }
-
-export function postData(req: Request, res: Response) {
-  const body = req.body
-
-  console.log({ lalala: body })
-}

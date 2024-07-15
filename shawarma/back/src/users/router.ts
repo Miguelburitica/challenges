@@ -1,9 +1,8 @@
 import { Router } from 'express'
-import { getUsersController, postData } from './controller'
+import { getUsersController } from './controller'
 
 const app = Router()
 
-app.get('/file', getUsersController)
-app.post('/file', postData)
+app.get('/', getUsersController)
 
 export default app
